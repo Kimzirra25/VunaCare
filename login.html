@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VunaCare Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #22C55E
+    );
+    padding:20px;
+}
+
+.login-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:400px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    color:white;
+}
+
+.login-box h1{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.login-box h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-weight:400;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:15px;
+}
+
+.input-group input::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+.input-group input:focus{
+    border:2px solid rgba(255,255,255,0.6);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options a{
+    color:white;
+    text-decoration:none;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    color:#2196f3;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+    text-decoration: none;
+}
+.login-btn a{
+    color: black;
+    text-decoration: none;
+}
+
+.login-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+.signup-link{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    text-decoration: none;
+    color: black;
+}
+
+.signup-link a{
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.signup-link a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:480px){
+    .login-box{
+        width:100%;
+        padding:30px 25px;
+    }
+
+    .login-box h1{
+        font-size:2rem;
+    }
+}
+</style>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>VunaCare</h1>
+            <h2>Login to your account</h2>
+
+            <form action="dashboard.html" method="post">
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="options">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn" >
+                     <a href="/index.html">Login</a>
+                </button>
+
+                <p class="signup-link">
+                    Don't have an account?
+                    <a href="#">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
